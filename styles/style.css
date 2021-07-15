@@ -1,0 +1,93 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* tournament details  start*/
+.tournament-details:hover{
+    transform: scale(1.1);
+}
+.tournament-details{
+    background-color: #2D25A0;
+    width: 1400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    margin-bottom: 70px;
+}
+.tournament-name{
+    color: #FFFFFF;
+    font-size: 64px;
+}
+.tournament-live{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: .80em;
+    width: 100px;
+    height: 25px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* banner  */
+.tournament-banner img{
+    width: 556px;
+    height: 438px;
+    size: 100%;
+    margin-right: 80px;
+}
+.tournament-info{
+    margin-right: 80px;
+}
+.fa-arrow-right{
+    margin-left: 5px;
+}
+/* tournament details end  */
+
+/* players details start*/
+.players-details{
+    margin-left: 100px;
+}
+.player{
+    width: 330px;
+    height:456px;
+    top: 747px;
+    left: 180px;
+    
+}
+.player img{
+   width: 350px;
+   height: 256px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 45px;
+    grid-column-gap: 30px;
+}
+
+
+/* footer  */
+footer{
+    text-align: center;
+    margin-top: 110px;
+}
+.footer-logo img{
+    width: 384px;
+    height: 110px;
+}
+.social-media-logos{
+    display: flex;
+    justify-content:center;
+    
+}
+.logo{
+    width: 30px;
+}
+.copyright p{
+    font-weight: 400;
+}
