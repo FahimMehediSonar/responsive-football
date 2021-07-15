@@ -5,12 +5,18 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 /* tournament details  start*/
-.tournament-details:hover{
+.tournament-intro:hover img{
     transform: scale(1.1);
+    transition: transform 1s ease-out;
+}
+.tournament-intro{
+    overflow: hidden;
 }
 .tournament-details{
     background-color: #2D25A0;
-    width: 1400px;
+    /* width: 1400px; */
+    /* height: 500px; */
+    width: 1200px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -49,32 +55,52 @@ body{
 
 /* players details start*/
 .players-details{
-    margin-left: 100px;
+    padding-left: 48px;
 }
 .player{
     width: 330px;
     height:456px;
     top: 747px;
     left: 180px;
+    padding:10px;
+    box-shadow: 0px 0px 50px 2px silver;
     
 }
 .player img{
-   width: 350px;
+   width: 325px;
    height: 256px;
 }
 
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 45px;
-    grid-column-gap: 30px;
+    /* grid-row-gap: 45px;
+    grid-column-gap: 50px; */
+    justify-content: center;
+    margin-left: 2px;
+}
+.player{
+    grid-column-gap: 40px;
+    margin-top: 20px;
 }
 
-
+/* Additional information */
+.additional-info{
+    margin-top: 300px;
+    margin-left: 100px;
+    list-style: none;
+}
+.additional-info{
+    display: flex;
+    justify-content: space-between;
+}
+.additional-info a{
+    text-decoration: none;
+}
 /* footer  */
 footer{
     text-align: center;
-    margin-top: 110px;
+    margin-top: 200px;
 }
 .footer-logo img{
     width: 384px;
@@ -90,4 +116,20 @@ footer{
 }
 .copyright p{
     font-weight: 400;
+}
+
+/* .......media queries....... */
+
+/* mobile devices */
+@media only screen and (max-width:688px){
+    .players{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .player,.bottom{
+        flex-direction: column;
+        
+    }
+    
 }
